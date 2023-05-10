@@ -1,0 +1,283 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+.droid-arabic-kufi{font-family: 'Droid Arabic Kufi', serif;}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Droid Arabic Kufi', serif;
+	font-family: 'Darumadrop One', cursive;
+  }
+  
+  body {
+	font-family: 'Darumadrop One', cursive;
+	font-family: 'Droid Arabic Kufi', serif;
+	background-color: #FBCA1F;
+  }
+  
+  .container {
+	max-width: 1200px;
+	margin: auto;
+	padding: 20px;
+  }
+  
+  .calculator,
+  .gold-price-calculator,
+  .notes {
+	background-color: #fff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	margin-bottom: 20px;
+	padding: 20px;
+	font-family: inherit;
+	font-weight: 900;
+  }
+  
+  .calculator h2,
+  .gold-price-calculator h2,
+  .notes h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #000000;
+  }
+  
+  .form-group {
+	margin-bottom: 10px;
+  }
+  
+  .form-group label {
+	display: block;
+	margin-bottom: 5px;
+	color: #000000;
+  }
+  
+  .form-group input[type='text'],
+  .form-group select {
+	font-family: inherit;
+	font-weight: 900;
+	border-width: 5px;
+	border-color: #000000;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #FBCA1F;
+	width: 100%;
+	font-size: 1.1rem;
+	color: #000000;
+  }
+  
+  .button-group {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+  }
+  
+  .button-group button {
+	margin: 3px;
+	background: #FBCA1F;
+	padding: 0.6em 1.3em;
+	font-family: inherit;
+	font-weight: 900;
+	font-size: 18px;
+	border: 3px solid black;
+	border-radius: 0.4em;
+	box-shadow: 0.1em 0.1em;
+  }
+  
+  .button-group button:hover {
+	transform: translate(-0.05em, -0.05em);
+	box-shadow: 0.15em 0.15em;
+  }
+  .button-group button:active {
+	transform: translate(0.05em, 0.05em);
+	box-shadow: 0.05em 0.05em;
+  }
+  
+  .form-group input[type='text'][readonly],
+  .form-group textarea[readonly] {
+	background-color: #FBCA1F ;
+	color: #000000;
+  }
+  
+  .gold-price-calculator button {
+	float: right;
+	margin: 20px;
+	background: #FBCA1F;
+	font-family: inherit;
+	padding: 0.6em 1.3em;
+	font-weight: 900;
+	font-size: 18px;
+	border: 3px solid black;
+	border-radius: 0.4em;
+	box-shadow: 0.1em 0.1em;
+  }
+  
+  .gold-price-calculator button:hover {
+	transform: translate(-0.05em, -0.05em);
+	box-shadow: 0.15em 0.15em;
+  }
+  .gold-price-calculator button:active {
+	transform: translate(0.05em, 0.05em);
+	box-shadow: 0.05em 0.05em;
+  }
+  
+  .notes textarea {
+	width: 100%;
+	border-width: 5px;
+	border-color: #000000;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #FBCA1F;
+	color: #000000;
+	font-size: 1.1rem;
+	line-height: 1.5;
+  }
+
+  #navbar {
+	background-color: #fff;
+	--navbar-height: 64px;
+	height: var(--navbar-height);
+	left: 0;
+	right: 0;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  .navbar-container {
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	height: 100%;
+	align-items: center;
+  }
+  .navbar-item {
+	margin: 0.4em;
+	width: 100%;
+  }
+  
+  .home-link,
+  .navbar-link {
+color: #000000;
+	text-decoration: none;
+	display: flex;
+	font-weight: 600;
+	font-size: 20px;
+	align-items: center;
+  }
+  
+  .home-link:is(:focus, :hover) {
+	color: black;
+  }
+  
+  .navbar-link {
+	background: #FBCA1F;
+	font-family: inherit;
+	padding: 0.4em 0.4em;
+	font-weight: 1200;
+	font-size: 16px;
+	border: 3px solid black;
+	border-radius: 0.4em;
+	box-shadow: 0.1em 0.1em;
+  }
+  
+  .navbar-link:is(:focus, :hover) {
+	transform: translate(-0.05em, -0.05em);
+	box-shadow: 0.15em 0.15em;
+  }
+  .navbar-link :active {
+	transform: translate(0.05em, 0.05em);
+	box-shadow: 0.05em 0.05em;
+  }
+  .navbar-logo img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	margin-right: 0.5em;
+  }
+  #navbar-toggle {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+  }
+  .icon-bar {
+	display: block;
+	width: 25px;
+	height: 4px;
+	margin: 2px;
+	background-color:black;
+  }
+  #navbar-toggle:is(:focus, :hover) .icon-bar {
+	background-color: black;
+  }
+  #navbar-toggle[aria-expanded="true"] .icon-bar:is(:first-child, :last-child) {
+	position: absolute;
+	margin: 0;
+	width: 30px;
+  }
+  #navbar-toggle[aria-expanded="true"] .icon-bar:first-child {
+	transform: rotate(45deg);
+  }
+  #navbar-toggle[aria-expanded="true"] .icon-bar:nth-child(2) {
+	opacity: 0;
+  }
+  #navbar-toggle[aria-expanded="true"] .icon-bar:last-child {
+	transform: rotate(-45deg);
+  }
+  #navbar-menu {
+	position: fixed;
+	top: var(--navbar-height);
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	left: 0;
+	right: 0;
+  }
+  #navbar-toggle[aria-expanded="true"] + #navbar-menu {
+	background-color: rgba(0, 0, 0, 0.4);
+	opacity: 1;
+	visibility: visible;
+  }
+  .navbar-links {
+	list-style: none;
+	position: absolute;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	left: 0;
+	right: 0;
+	margin: 1.4rem;
+	border-radius: 5px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
+	padding: 1em;
+  }
+
+  
+	#navbar-menu,
+	#navbar-toggle[aria-expanded="true"] #navbar-menu {
+	  visibility: visible;
+	  opacity: 1;
+	  position: static;
+	  display: block;
+	  height: 100%;
+	}
+  
+	.navbar-links,
+	#navbar-toggle[aria-expanded="true"] #navbar-menu {
+	  margin: 0;
+	  padding: 0;
+	  box-shadow: none;
+	  position: static;
+	  flex-direction: row;
+	  width: 100%;
+	  height: 100%;
+	}
+  }

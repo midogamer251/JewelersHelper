@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الة حاسبة وحاسبة أسعار الذهب</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="navbar">
+    <nav class="navbar-container container">
+      <a href="#" class="home-link">
+        <div class="navbar-logo"><img src="Untitled-1 (7)-05.png" height="40"></div>
+        Jewelry Helper
+      </a>
+      <div id="navbar-menu" aria-labelledby="navbar-toggle">
+        <ul class="navbar-links">
+          <li class="navbar-item"><a class="navbar-link" href="#about">المساعد</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container">
+        <div id="calculator" class="calculator">
+            <h2>آلة حاسبة</h2>
+            <div class="form-group">
+              <label for="num1">الرقم الأول:</label>
+              <input type="text" id="num1">
+            </div>
+            <div class="form-group">
+              <label for="num2">الرقم الثاني:</label>
+              <input type="text" id="num2">
+            </div>
+            <div class="button-group">
+              <button onclick="calculate('+')">جمع</button>
+              <button onclick="calculate('-')">طرح</button>
+              <button onclick="calculate('*')">ضرب</button>
+              <button onclick="calculate('/')">قسمة</button>
+            </div>
+            <div class="form-group">
+              <label for="result">النتيجة:</label>
+              <input type="text" id="result" readonly>
+            </div>
+        </div>          
+        <div id="gold-price-calculator" class="gold-price-calculator">
+            <h2>حاسبة أسعار الذهب</h2>
+            <div class="form-group">
+                <label for="weight">الوزن (بالجرام):</label>
+                <input type="text" id="weight">
+            </div>
+            <div class="form-group">
+                <label for="carat">عيار الذهب:</label>
+                <select id="carat">
+                    <option value="18">18 قيراط</option>
+                    <option value="21">21 قيراط</option>
+                    <option value="24">24 قيراط</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="price">سعر الجرام:</label>
+                <input type="text" id="price">
+            </div>
+            <button onclick="calculatePrice()">احسب</button>
+            <div class="form-group">
+                <label for="priceResult">النتيجة:</label>
+                <input type="text" id="priceResult" readonly>
+            </div>
+        </div>
+        <div id="notes" class="notes">
+            <h2>مذكرة</h2>
+            <textarea rows="10" cols="50"></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
